@@ -5,8 +5,8 @@
     server{
         ...
         location /html5 { // html5为url地址下的名称  如 http://xxx.com/html5
-            alias /home/html5; // 前端文件资源
-            index index.html; 
+            alias /home/html5; // 前端文件资源目录
+            index index.html; //未指定打开文件是，默认打开index.html
             try_files $uri $uri/ /html5/index.html //找不到文件重定向到的地址  
         }
         ...
